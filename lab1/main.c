@@ -56,6 +56,7 @@ int main() {
     head=ReverseList(head);
     Node *curr = head;
     while (curr != NULL) {
+        if(curr->ch!= ' ')
         printf("'%c' ", curr->ch);
         Node *temp = curr;
         curr = curr->next;
